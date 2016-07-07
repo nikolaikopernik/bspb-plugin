@@ -51,12 +51,15 @@ function plotGroups(sums){
 		obj.label = groups[i].name+" ("+sums[i]+"p)";
 		obj.data = sums[i];
 		obj.color = colors[i];
-		data.push(obj);
+		if(obj.data > 0){
+		    data.push(obj);
+		}
 	}
 	//sort
 	data.sort(function(a, b){
 		return a.data < b.data ? 1 : -1;
 	});
+
 	//plot
 	$.plot('#plot-2', data, {
 		series: {

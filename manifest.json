@@ -1,0 +1,18 @@
+ {
+  "manifest_version": 2,
+  "name": "BSPB Costs Analytics",
+  "version": "0.9",
+	
+  "description": "Addition feature to classify all transaction in BSPB's internet bank.",
+  "icons": { "128": "icon_128.png",
+             "48": "icon_48.png",
+ 	     "16": "icon_16.png" },
+  "permissions": ["https://i.bspb.ru/statement*"],
+  "content_scripts": [
+    {
+      "matches": ["https://i.bspb.ru/statement*"],
+      "js": ["load2page.js"]
+    }
+  ],
+  "web_accessible_resources":["costs.css","costs.js"] 
+}
