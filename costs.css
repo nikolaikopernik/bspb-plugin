@@ -3,12 +3,34 @@
   border-radius: 6px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   max-width:100%;
+  vertical-align: center;
+}
+
+#Add2GroupDlg input {
+	margin: 0px 10px 0px 0px;
+}
+
+
+#Add2GroupDlg #group {
+	width: 10em;
+}
+
+#Add2GroupDlg #name {
+	width: 25em;
+}
+
+#Add2GroupDlg #description {
+	width: 25em;
 }
 
 #plot-2 {
 	display: block;
     margin: auto;
 	font-size:18px;
+}
+
+.legendLabel {
+	padding: 0px 10px;
 }
 
 .costLabel {
@@ -24,6 +46,7 @@
 	color: white;
 }
 
-#chartlabel {
-	align: center;
+.pieLabel {
+	background-color: #fff;
+	opacity: 0.7;
 }
