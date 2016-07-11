@@ -15,7 +15,7 @@ $(document).ready(initCostsAnalytics());
 
 //first init
 function initCostsAnalytics(){
-	$("#plot-1").after("<div id='plot-2' style='width:800px;height:500px'></div>");
+	$(".statement-container").before("<div id='plot-2' style='width:800px;height:500px'></div>");
 	updateCosts();
 }
 
